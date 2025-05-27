@@ -1,0 +1,42 @@
+<!-- Spanning Rows -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Questa tabella contiene celle che uniscono più righe  -->
+    <table>
+        <tr>
+            <th></th>
+            <th>Sabato</th>
+            <th>Domenica</th>
+        </tr>
+        <tr>
+            <th>Mattina</th>
+            <td rowspan="2">Lavoro</td>
+            <td rowspan="3">Relax</td>
+        </tr>
+        <tr>
+            <th>Pomeriggio</th>
+        </tr>
+        <tr>
+            <th>Sera</th>
+            <td>Cena</td>
+        </tr>
+    </table>
+</body>
+
+</html>
