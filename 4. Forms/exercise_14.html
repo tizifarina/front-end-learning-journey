@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--Review-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/invia-dati" method="POST">
+
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+
+        <label for="livello">Seleziona il livello da 1 a 10: </label>
+        <input type="range" name="livello" id="livello" min="1" max="10" step="1">
+
+        <br>
+        <br>
+        <br>
+
+        <label for="opzione1">Opzione A: </label>
+        <input type="checkbox" id="opzione1" value="A" name="scelte[]">
+
+        <label for="opzione2">Opzione B: </label>
+        <input type="checkbox" id="opzione2" value="B" name="scelte[]">
+
+        <label for="opzione3">Opzione C: </label>
+        <input type="checkbox" id="opzione3" value="C" name="scelte[]">
+
+        <br>
+        <br>
+        <br>
+
+        <label for="si">Si'</label>
+        <input type="radio" name="consenso" id="si" value="si">
+
+        <label for="no">No</label>
+        <input type="radio" name="consenso" id="no" value="no">
+
+        <br>
+        <br>
+
+        <label for="piatto">Seleziona il tuo piatto preferito: </label>
+        <select name="piatto" id="piatto">
+            <option value="pizza">Pizza</option>
+            <option value="pasta">Pasta</option>
+            <option value="riso">Riso</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label for="citta">Digita o scegli una citta': </label>
+        <input type="text" list="citta" name="citta">
+
+        <datalist id="citta">
+            <option value="Roma"></option>
+            <option value="Milano"></option>
+            <option value="Napoli"></option>
+        </datalist>
+
+        <label for="commento">Scrivi un commento: </label>
+        <textarea name="commento" id="commento" rows="4" cols="40"
+            placeholder="Inserisci qui il tuo commento..."></textarea>
+        <input type="submit" value="Invia">
+
+    </form>
+</body>
+
+</html>
