@@ -4,10 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio - Jane Coder</title>
 </head>
 
 <body>
+
+    <header>
+        <h1>Jane Coder</h1>
+        <p>Front-End Developer in Apprendimento</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contatti.html">Contatti</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>
+            I miei progetti
+        </h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome Progetto</th>
+                    <th>Descrizione</th>
+                    <th>Strumenti</th>
+                    <th>Stato</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Riga con colspan su due colonne (Descrizione + Strumenti) -->
+                <tr>
+                    <td>Pagina HTML base</td>
+                    <td colspan="2">Layout base semplice</td>
+                    <td>Completato</td>
+                </tr>
+
+                <!-- Riga con rowspan per un progetto su 2 righe -->
+                <tr>
+                    <td rowspan="2">Portfolio Web</td>
+                    <td>Homepage</td>
+                    <td>HTML, CSS</td>
+                    <td>In progress...</td>
+                </tr>
+
+                <tr>
+                    <td>Pagina con progetto tabella</td>
+                    <td>HTML</td>
+                    <td>Starting</td>
+                </tr>
+
+                <!-- Nuovo progetto: Weather App -->
+                <tr>
+                    <td>Weather App</td>
+                    <td>App per il meteo con API openweather</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>Completato</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4">Totale completati: </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <figure>
+            <img src="assets/images/weather-app.jpg" alt="Interfaccia Weather App">
+            <figcaption>Interfaccia Weather App</figcaption>
+        </figure>
+
+        <figure>
+            <img src="assets/images/portfolio-preview.jpg" alt="Homepage del Portfolio">
+            <figcaption>Homepage del Portfolio</figcaption>
+        </figure>
+
+
+        <iframe src="https://www.youtube.com/embed/138enunVlfs" title="YouTube video player" frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <aside>
+            Suggerimento: mantieni sempre il codice ordinato.
+        </aside>
+    </main>
+    <!-- Fine della pagina portfolio -->
 
 </body>
 
