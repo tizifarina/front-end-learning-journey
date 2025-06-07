@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            <form>
+                <div>
+                    <label for="nome-completo">Nome Completo</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required minlength="3">
+                </div>
+
+                <div>
+                    <label for="indirizzo-mail">Email</label>
+                    <input type="email" id="indirizzo-mail" name="indirizzo-mail" required>
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required pattern=".{6, }">
+                </div>
+
+                <div>
+                    <label for="eta">Eta'</label>
+                    <input type="number" id="eta" name="eta" required min="13" max="120">
+                </div>
+
+                <div>
+                    <label for="soddisfazione">Valutazione</label>
+                    <input type="range" id="soddisfazione" name="soddisfazione" required min="0" max="10">
+                </div>
+
+                <div>
+                    <label for="messaggio">Messaggio</label>
+                    <textarea id="nome-completo" name="messaggio" maxlength="500"></textarea>
+                </div>
+
+                <div>
+                    <label for="motivo-contatto">Motivo del Contatto</label>
+                    <select id="motivo-contatto" name="motivo-contatto">
+                        <option value="offerta">Offerta di lavoro</option>
+                        <option value="collaborazione">Collaborazione</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="come-trovato">Come mi hai trovato?</label>
+                    <input list="fonti" id="come-trovato" name="come-trovato">
+                    <datalist id="fonti">
+                        <option value="Google"></option>
+                        <option value="Amico"></option>
+                        <option value="LinkedIn"></option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <p>Metodo di contatto preferito: </p>
+                    <input type="radio" id="email" name="answer" value="email">
+                    <label for="email">Email</label>
+
+                    <input type="radio" id="telefono" name="answer" value="telefono">
+                    <label for="telefono">Telefono</label>
+                </div>
+
+                <div>
+                    <p>Iscriviti a...</p>
+                    <input type="checkbox" id="notizie" name="notizie" value="notizie">
+                    <label for="notizie">Notizie</label>
+
+                    <input type="checkbox" id="eventi" name="eventi" value="eventi">
+                    <label for="eventi">Eventi</label>
+                </div>
+
+                <div>
+                    <button type="submit">Invia Messaggio</button>
+                </div>
+            </form>
+            <!--Fine del modulo contatti-->
+        </article>
+    </main>
+</body>
+
+</html>
