@@ -8,6 +8,54 @@
 </head>
 
 <body>
+    <header>
+        <h1>Conosci i Personaggi</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="details.html">Dettagli</a>
+            <a href="contact.html">Contatti</a>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        <article>
+            <form>
+                <label for="nome">Nome completo</label><br>
+                <input type="text" name="nome" id="nome" required><br><br>
+
+                <label for="email">Indirizzo email</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+
+                <label for="preferito">Scegli il tuo personaggio preferito</label>
+                <select name="preferito" id="preferito">
+                    <option value="elira">Elira</option>
+                    <option value="bram">Bram</option>
+                    <option value="willow">Willow</option>
+                </select><br><br>
+
+                <h2>La consiglieresti?</h2>
+                <input type="radio" id="recensione-si" name="recensione" value="si">
+                <label for="recensione-si">Si'</label><br>
+
+                <input type="radio" id="recensione-no" name="recensione" value="no">
+                <label for="recensione-no">No</label><br><br>
+
+                <label for="commento">Condividi il tuo pensiero: </label><br>
+                <textarea name="commento" id="commento" maxlength="300"></textarea><br><br>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    Iscrivimi agli aggiornamenti per i fan
+                </label><br><br>
+
+                <button type="submit">Invia messaggio</button>
+            </form>
+        </article>
+
+    </main>
+    <!-- Fine del modulo di contatto -->
 
 </body>
 
