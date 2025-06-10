@@ -28,7 +28,7 @@
         <p>Storm, o Ororo Munroe, è una mutante con l’abilità di controllare il clima. Leader degli X-Men, ha dimostrato
             grande coraggio e forza in numerose battaglie.</p>
 
-        <img src="assets/media/storm.jpg" alt="Storm, o Ororo Munroe">
+        <img src="assets/images/storm.jpg" alt="Storm, o Ororo Munroe">
         <figcaption>Illustrazione di Storm in posa eroica</figcaption>
     </main>
 
@@ -44,21 +44,83 @@
         <li>Vivere in equilibrio con la natura</li>
     </ol>
 
-    <aside>Sapevi che Storm è stata anche la regina del Wakanda?</aside>
-    <img src="assets/media/storm-battle.jpg" alt="Storm in battaglia">
+    <aside>Sapevi che Storm è stata anche la regina del Wakanda?</aside><br>
+    <img src="assets/images/storm-battle.jpg" alt="Storm in battaglia">
     <figcaption>Storm in battaglia durante la Guerra dei Mutanti</figcaption>
 
 
-    <video src="assets/media/storm-powers.mp4" controls></video>
+    <video src="assets/media/storm-powers.mp4" width="400" height="300" controls></video>
 
     <a href="#fondo" id="bottom"></a>
     <a href="https://marvel.fandom.com/wiki/Ororo_Munroe_(Earth-616)" target="_blank"></a>
 
 
     <form>
-        <table>
-
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome Attacco</th>
+                    <th>Tipo</th>
+                    <th>Potenza</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">Onda Energetica</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Ascia Incantata</td>
+                    <td>Arma</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>Uso Speciale</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Mantello invisibile</td>
+                    <td>Vestiti</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
         </table>
+    </form>
+
+    <form>
+        <label for="nome">Nome completo</label><br>
+        <input type="text" name="nome" id="nome" required minlength="3"><br><br>
+
+        <label for="email">Indirizzo email</label><br>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <label for="eta">Età</label><br>
+        <input type="number" name="eta" id="eta" min="13" max="120"><br><br>
+
+        <label for="valutazione">Valutazione</label><br>
+        <input type="range" name="valutazione" id="valutazione" min="1" max="10" value="5"><br><br>
+
+        <label for="messaggio">Note aggiuntive: </label>
+        <textarea name="messaggio" id="messaggio" maxlength="500"></textarea>
+
+        <label for="richiesta">Seleziona il tipo di richiesta: </label>
+        <select name="richiesta" id="richiesta">
+            <option value="domanda">Domanda</option>
+            <option value="collaborazione">Proposta di collaborazione</option>
+            <option value="altro">Altro</option>
+        </select>
+        <label for="come-conosciuto">Come hai conosciuto Storm?</label>
+        <input list="fonti-storm" id="come-conosciuto" name="come-conosciuto">
+
+        <datalist id="fonti-storm">
+            <option value="Fumetti"></option>
+            <option value="Film"></option>
+            <option value="Amici"></option>
+        </datalist>
+
     </form>
 </body>
 
