@@ -4,11 +4,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Centro di Adozione per Creature Mitiche</title>
 </head>
 
 <body>
+    <header>
+        <h1>Centro di Adozione per Creature Mitiche</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#adotta">Adotta</a></li>
+                <li><a href="#creature">Creature</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://mythicalcreatureslist.com/" target="_blank">Sito Ufficiale</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <figure>
+                <img src="assets/images/magic-world.jpg" alt="Paesaggio magico con creature" width="500">
+                <figcaption>Benvenuto nella tua prossima avventura!</figcaption>
+            </figure>
+            <audio src="assets/media/file.mp4" controls></audio>
+            <p><span>una volta nella vita</span><br>
+                <strong>compagni magici</strong><br>
+                <em>viaggio straordinario</em>
+            </p><br>
+        </section>
+
+        <section id="adotta">
+            <h2>Adotta</h2>
+            <form action="submit_adoption.html" method="POST">
+                <label for="nome">Nome completo</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="nome"><br><br>
+
+                <label for="eta">Eta'</label><br>
+                <input type="number" name="eta" id="eta"><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password"><br><br>
+
+                <label for="creature">Scegli la tua creatura preferita: </label><br>
+                <select id="creatura" name="creatura">
+                    <option value="drago">Drago</option>
+                    <option value="unicorno">Unicorno</option>
+                    <option value="fenice">Fenice</option>
+                    <option value="grifone">Grifone</option>
+                </select><br><br>
+
+                <label for="citta">Scegli la tua citta' di ritiro:</label><br>
+                <input list="citta-ritiro" name="citta" id="citta" placeholder="Digita qui">
+                <datalist id="citta-ritiro">
+                    <option value="Avalon">
+                    <option value="Atlantide">
+                    <option value="El Dorado">
+                    <option value="Camelot">
+                </datalist><br><br>
+
+                <label for="compatibilita">Compatibilita' magica:</label>
+                <input type="range" min="0" max="100" step="5" name="compatibilita" id="compatibilita"><br><br>
+
+                <p>Seleziona le abilita' magiche: </p>
+                <label>
+                    <input type="checkbox" name="abilita" value="volo">
+                    Volo
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="abilita" value="volo">
+                    Incantesimi
+                </label><br>
+
+                <label>
+                    <input type="checkbox" name="abilita" value="pozioni">
+                    Creazione di pozioni
+                </label><br><br>
+
+                <p>Scegli velocita' di adozione: </p>
+                <label>
+                    <input type="radio" name="adozione" value="urgente">
+                    Urgente
+                </label><br>
+
+                <label>
+                    <input type="radio" name="adozione" value="settimana">
+                    Entro una settimana
+                </label><br>
+
+                <label>
+                    <input type="radio" name="adozione" value="senza-fretta">
+                    Senza fretta
+                </label><br><br>
+
+                <label for="textarea">Spiega qui perche' desideri essere un adottante:</label>
+                <textarea name="messaggio" rows="5" cols="40" id="messaggio" maxlength="500"></textarea><br><br>
+
+                <input type="submit" value="Adotta Ora">
+            </form>
+        </section>
+
+        <section id="creature">
+            <h2>Creature</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Specie</th>
+                        <th scope="col">Livello di Potenza</th>
+                        <th scope="col">Disponibilita'</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Fira</th>
+                        <th>Fenice</th>
+                        <th>95</th>
+                        <th>Disponibile</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Stormwing</th>
+                        <th>Drago</th>
+                        <th>100</th>
+                        <th>Non Disponibile</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">SilverShadow</th>
+                        <th>Unicorno</th>
+                        <th>88</th>
+                        <th>Disponibile</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">GrumbleBeard</th>
+                        <th>Grifone</th>
+                        <th>92</th>
+                        <th>Disponibile</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Creature totali</td>
+                        <td colspan="4">4</td>
+                    </tr>
+                </tfoot>
+            </table><br><br>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <ul>
+                <li><strong>Q:</strong>Il drago e' consigliabile con i bambini piccoli?<br>
+                    <strong>A:</strong>Il cucciolo di drago e' un ottimo alleato del tuo bambino, l'esemplare adulto un
+                    po' meno tollerante
+                </li>
+
+                <li><strong>Q:</strong>Quanto tempo richiede l'adozione?<br>
+                    <strong>A:</strong>La maggior parte delle creature è pronta entro 3–5 giorni magici. <a
+                        href="#adotta">Vai alla sezione Adotta</a>
+                </li>
+
+                <li><strong>Q:</strong>È richiesta la formazione?<br>
+                    <strong>A:</strong>La formazione di base è <strong>richiesta</strong> per draghi e grifoni.
+                </li>
+
+                <li><strong>Q:</strong>Posso adottare più di una creatura?<br>
+                    <strong>A:</strong>Sì, se si dimostra <strong>una alta compatibilità magica.</strong>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!--Sezione video bonus-->
+
+    <section>
+        <h2>Scopri</h2>
+        <video src="assets/media/magic-journey.mp4" controls width="500"></video>
+        <p>Scopri il mondo delle creature mitiche!</p>
+
+        <a href="https://mythicalcreatureslist.com/creature/Dragon" target="_blank">
+            <img src="assets/images/dragon.jpg" alt="Vai alla pagina dei draghi" width="300">
+        </a>
+    </section>
 </body>
+<footer>
+    <p> © 2025 Centro di Adozione per Creature Mitiche.
+    </p>
+    <a href="#home">Torna all'inizio</a>
+</footer>
 
 </html>
