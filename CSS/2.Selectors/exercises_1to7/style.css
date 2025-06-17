@@ -1,0 +1,54 @@
+p
+ {
+    color: orange;
+    font-weight: bold;
+ }
+
+ h3 {
+    color: blue;
+ }
+
+* {
+  font-family: Verdana;  
+}
+
+.brand {
+    color: purple;
+}
+
+span {
+    font-weight: normal;
+}
+ 
+#large-title {
+    font-size: 48px;
+}
+
+[href] {
+    color: magenta;
+}
+
+/* Seleziona le immagini con "inverno" nel valore dell'attributo src */
+img[src*="inverno"] {
+  height: 50px;
+}
+
+/* Seleziona le immagini con "estate" nel valore dell'attributo src */
+img[src*="estate"] {
+  height: 100px;
+}
+
+.hov:hover {
+background-color: lime;
+}
+
+button:active {
+    background-color: orange;
+}
+
+a:link {
+  color: blue; /* link mai visitato */
+}
+
+a:visited {
+  color: purple; /* link visitato */

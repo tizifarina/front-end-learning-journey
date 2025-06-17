@@ -1,0 +1,51 @@
+.bold {
+    font-weight: bold;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+#main-title {
+    font-size: 50px;
+}
+
+h1 {
+    color: red;
+}
+
+.headline {
+    color: firebrick;
+}
+
+#main-news {
+    color: blue;
+}
+
+.special {
+    color: purple;
+}
+
+h1.special {
+    background-color: yellow;
+}
+
+.main-list li {
+    color: blue;
+}
+
+p {
+    color: blue;
+}
+
+.main p {
+    color: red;
+}
+
+h1, .menu {
+    font-family: Georgia;
+}
