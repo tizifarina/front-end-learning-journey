@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 1.Introduction to the Box Model -->
+    <style>
+        div {
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style=" overflow: hidden;background-color: red; padding: 
+    20px; border: solid black 1px; margin: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+        exercitationem totam sunt illum eaque rerum voluptates nostrum a, nesciunt saepe optio ullam, magni delectus
+        laborum porro! Quasi odit aliquam perferendis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+        exercitationem totam sunt illum eaque rerum voluptates nostrum a, nesciunt saepe optio ullam, magni delectus
+        laborum porro! Quasi odit aliquam perferendis.</div>
+    <div style="background-color: red; padding: 
+    20px; border: solid black 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam
+        aliquid sit totam facilis, est eligendi commodi sapiente non voluptatum odit, vero perspiciatis sint iure minima
+        libero nisi harum mollitia!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+        exercitationem totam sunt illum eaque rerum voluptates nostrum a, nesciunt saepe optio ullam, magni delectus
+        laborum porro! Quasi odit aliquam perferendis.</div>
+    <br><br>
+    <!-- 2.The Box Model -->
+    <section
+        style="margin: 40px; width: 300px; height: 150px; padding: 20px; border: 4px dashed;background-color: blue;">
+        Contenuto
+        principale
+        <img src="images/logo.png" alt="logo" style="width: 100px; height: 100px;">
+    </section>
+
+    <br><br>
+
+    <div">
+        </div>
+
+        <br><br>
+
+        <!-- 3.Height and Width -->
+        <p style="background-color:blueviolet; 240px; height: 80px;">Paragrafo con dimensioni fisse</p>
+        <p style="background-color: aqua;">Questo paragrafo si adatta al contenuto</p>
+        <div style="width: 300px; height:  100px; background-color: aquamarine;">
+            Box in pixel
+        </div>
+        <br>
+        <!-- Contenitore stretto con overflow hidden -->
+        <div style="width: 300px; height: 100px; overflow: hidden; background-color: lightgray;">
+            <div style="width: 1000px; height: 100px; background-color: tomato;">
+                Questo contenuto è molto largo e viene nascosto fuori dal contenitore!
+            </div>
+        </div>
+</body>
+
+</html>
