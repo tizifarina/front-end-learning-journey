@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 4.Border -->
+    <p style="border: 3px solid coral;">Paragrafo con bordo</p>
+    <p style="border: solid coral;">Paragrafo con stile e colore</p>
+
+    <div style="border: dotted blue;">
+        Ciao sono Tiziana e sto imparando CSS
+    </div>
+
+    <br>
+
+    <div style="border: thin solid gray;">Bordo thin</div>
+    <div style="border: medium solid gray;">Bordo medium</div>
+    <div style="border: thick solid gray;">Bordo thick</div>
+
+    <br>
+
+    <section style="border: none;">Sezione senza bordo visibile</section>
+
+    <!-- 5.Border Radius -->
+
+    <br><br>
+
+    <div style="border: 3px solid blue; border-radius: 5px;">Questo box ha un bordo</div>
+
+    <div style="border: solid blue 3px; border-radius: 20px;">Box con angoli molto arrotondati</div>
+
+    <div style="width: 60px; height: 60px; border: 3px solid blue; border-radius: 50%;"></div>
+
+    <div style="width: 100px; height: 60px; border: blue 3px solid; border-radius: 50%"></div>
+
+
+    <!-- 6.Padding -->
+    <br><br>
+
+    <p style="border: 3px coral solid;padding: 10px;">Contenuto con spazio interno</p>
+
+    <p style="border: 3px fuchsia solid;padding-bottom: 10px;">Paragrafo con padding solo in basso</p>
+
+    <div style="border: solid red;padding-top: 20px;"></div>
+    <br>
+    <section
+        style="border: solid blue 2px;padding-top: 15px;padding-right: 10px;padding-bottom: 5px;padding-left: 20px;background-color: yellow;">
+        Ciao, dimmi pure
+    </section>
+
+    <!-- 7.Padding Shorthand -->
+    <p style="border: 2px black solid;padding: 6px 11px 4px 9px; background-color: lightblue;">Padding personalizzato su
+        tutti i lati</p>
+
+    <p style="border: solid yellow;padding: 5px 10px 20px;">Padding con tre valori</p>
+
+    <div style="border: solid black;padding: 5px 10px;">Padding sopra/sotto e sinistra/destra</div>
+
+    <section style="border: 2px solid black; padding: 20px 5px 10px 30px;">
+        Verifica padding: top 20px, right 5px, bottom 10px, left 30px.
+    </section>
+
+
+    <!-- 8.Margin -->
+
+    <p style="border: 1px black solid;margin: 6px 10px 5px 12px;">Margini personalizzati su ogni lato</p>
+
+    <p style="border: solid black;margin:  5px 12px 4px;">Margine con tre valori</p>
+
+    <div style="border: solid black;margin: 20px 10px;">Margine sopra/sotto e sinistra/destra</div>
+
+    <section style="border: solid black;margin: 10px 30px 15px 5px;background-color: aquamarine;">Verifica visivamente
+        l'effetto del margine
+    </section>
+
+    <div style="border: solid black; margin-bottom: 25px;"></div>
+    <div style="border: solid black;"></div>
+
+    <!-- 10.Auto -->
+    <br>
+
+    <div style="width: 400px;margin: 0px auto ;">Questo div è centrato</div>
+    <div style="margin: 0px auto ;">Questo div è centrato</div>
+    <div style="width: 100%; margin: 0px auto ;">Questo div è centrato</div>
+
+    <br>
+
+    <section style="width: 800px;">
+        <div style="width: 400px;margin: 0 auto ;">Div centrato dentro un contenitore</div>
+    </section>
+
+
+    <br>
+
+    <div style="width: 400px;margin: 0 50px ;">Div spostato</div>
+
+    <!-- 11.Margin Collapse -->
+    <br><br>
+    <div style="display: flex; flex-direction: row;">
+
+        <div id="box1" style="width: 100px; height: 100px;margin-right: 20px;background-color: aqua;">
+        </div>
+        <div id="box2" style="width: 100px; height: 100px;margin-left: 20px;background-color: brown;">
+        </div>
+
+    </div>
+    <br><br>
+    <!-- Crea due <div> uno sotto l’altro con margini verticali -->
+
+
+    <div id="verticali1" style="height: 100px; border: solid black;margin-bottom: 30px; padding-top: 20px;"></div>
+    <div id="verticali2" style="height: 100px; border: solid black; margin-top: 20px;"></div>
+
+    <!-- Applica margine e padding orizzontale su due <div> -->
+
+    <div style="border: solid black; margin-left: 10px; padding-left: 10px;">Ciao ciao</div>
+    <div style="border: solid black; margin-left: 10px; padding-left: 10px;">Altro testo</div>
+    <!--Questo esempio mostra il comportamento dei margini verticali collassati -->
+
+
+</body>
+
+
+</html>
