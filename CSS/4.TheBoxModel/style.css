@@ -1,0 +1,16 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.futuro {
+  visibility: hidden;  
+}
+
+.visibile {
+    visibility: visible;
+}
+
+.collassa {
+    visibility: collapse;
+}

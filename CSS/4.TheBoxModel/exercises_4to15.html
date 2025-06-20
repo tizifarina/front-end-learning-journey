@@ -123,6 +123,62 @@
     <div style="border: solid black; margin-left: 10px; padding-left: 10px;">Altro testo</div>
     <!--Questo esempio mostra il comportamento dei margini verticali collassati -->
 
+    <!-- 12.Minimum and Maximum Height and Width -->
+
+    <p style="min-width: 300px; max-width: 600px;">Questo testo ha una larghezza controllata</p>
+    <p style="min-height: 150px; max-height: 300px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Voluptates ea explicabo minima quaerat enim at. Illo
+        saepe voluptatibus repellendus quas, optio iste deleniti quia ipsa voluptatum ratione, velit blanditiis
+        adipisci!</p>
+    <p style="max-height: 50px;">Contenuto troppo grande per il box</p>
+
+
+    <!-- Se il contenuto è più alto del max-height, può uscire fuori dal box -->
+    <p>Se il contenuto è più alto del max-height, può uscire fuori dal box</p>
+    <div style="min-width: 250px; max-width: 500px;min-height: 100px;max-height: 200px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, velit saepe tempora perferendis quae at
+        mollitia ex eaque quod ad dolore doloremque vitae voluptates, hic aut, ipsam illum labore veniam?
+    </div>
+
+
+
+    <!-- 13.Overflow -->
+    <div style="height: 100px; overflow-y: auto;">
+        <p>OVERFLOW Y Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quos distinctio harum ratione,
+            aliquam
+            laborum.
+            Aut quia neque laboriosam quo voluptatem consequuntur, vero architecto accusamus impedit soluta numquam non
+            blanditiis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quos distinctio harum ratione,
+            aliquam
+            laborum.
+            Aut quia neque laboriosam quo voluptatem consequuntur, vero architecto accusamus impedit soluta numquam non
+            blanditiis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quos distinctio harum ratione,
+            aliquam
+            laborum.
+            Aut quia neque laboriosam quo voluptatem consequuntur, vero architecto accusamus impedit soluta numquam non
+            blanditiis.</p>
+    </div>
+
+    <div style="width: 200px; height: 100px; overflow-x: auto; overflow-y: hidden; border: 2px solid black;">
+        <p style="width: 500px;">
+            Questo contenuto è molto più largo di 200 pixel, quindi dovrai scorrere orizzontalmente per leggerlo tutto.
+        </p>
+    </div>
+
+    <!-- img larghezza tot 344px  altezza tot 244px-->
+    <img src="images/logo.png" alt="logo"
+        style="width: 300px;height: 200px;padding: 10px;border: 2px;margin: 20px 10px;">
+
+
+    <!-- 14.Resetting Defaults -->
+    <!-- vedi CSS -->
+
+    <!-- 15.Visibility -->
+    <ul>
+        <li class="collassa">Esplora</li>
+        <li class="visibile">Connetti</li>
+        <li class="futuro">Dona</li>
+    </ul>
 
 </body>
 
