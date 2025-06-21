@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--	Why Change the Box Model?-->
+    <h1>Ciao Mondo</h1>
+    <!--La larghezza totale è 322_px e l’altezza totale è __222_px-->
+    <!--Questo esempio mostra che padding e bordo aumentano le dimensioni finali del riquadro.-->
+    <h1 class="titolo2">Titolo Alternativo</h1>
+
+
+    <!--Box Model: Content-Box-->
+    <h2>Modello di contenitore</h2>
+    <!--Il contenitore appare più grande di 300x200 a causa del padding e del bordo.-->
+
+    <div>Altro contenitore</div>
+    <!--Il browser usa content-box come valore predefinito per box-sizing.-->
+
+
+    <!--Box Model: Border-Box-->
+    <h1 class="border-box">Hello World</h1>
+
+    <p>La dimensione della scatola include il padding e il bordo</p>
+
+    <!--The New Box Model-->
+    <h2 class="new-box">Il nuovo modello di scatola</h2>
+
+    <div class="content-box">Questo div usa content-box</div>
+
+    <!--Review: Changing the Box Model-->
+    <!--Nel box model predefinito (content-box), il bordo e il padding aumentano le dimensioni-->
+    <div class="div1">Box di esempio con padding e bordo - border-box</div>
+    <div class="div2">Box di esempio con padding e bordo - content-box</div>
+
+</body>
+
+</html>
