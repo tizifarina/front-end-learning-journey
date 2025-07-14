@@ -1,0 +1,1 @@
+console.log("Il file JS è collegato correttamente!");
