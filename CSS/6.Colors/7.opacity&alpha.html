@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .contenitore-trasparenze {
+            position: relative;
+            background-color: black;
+            height: 250px;
+        }
+
+        .rgba,
+        .hsla,
+        .alpha {
+            width: 300px;
+            height: 150px;
+            position: absolute;
+            padding: 20px;
+            color: white;
+        }
+
+        .rgba {
+            background-color: rgba(255, 0, 0, 0.4);
+            top: 0;
+        }
+
+        .hsla {
+            background-color: hsla(200, 100%, 50%, 0.6);
+            top: 40px;
+        }
+
+        .alpha {
+            background-color: #0000FF80;
+            top: 80px;
+        }
+
+        p {
+            background-color: grey;
+            padding: 20px;
+        }
+
+        .semi-rgba {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .semi-hsla {
+            color: hsla(0, 0%, 0%, 0.25);
+        }
+
+        .trasparente {
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenitore-trasparenze">
+        <div class="rgba">Blocco RGBA</div>
+        <div class="hsla">Blocco HSLA</div>
+        <div class="alpha">Blocco HEX con alpha</div>
+    </div>
+
+    <p class="semi-rgba">Testo semi-trasparente con RGBA</p>
+    <p class="semi-hsla">Testo semi-trasparente con HSLA</p>
+    <p class="trasparente">Testo completamente trasparente</p>
+</body>
+
+</html>
