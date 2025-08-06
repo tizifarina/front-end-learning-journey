@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensione del testo con rem</title>
+
+    <style>
+        /*html {
+            font-size: 20px;
+        }*/
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        .modificata {
+            font-size: 1.25rem;
+        }
+
+        .predefinita {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Benvenuto!</h1>
+        <p>Questo paragrafo utilizza rem per la dimensione del font.</p>
+    </header>
+
+    <section id="confronto-rem">
+        <p class="modificata">Questo paragrafo usa 1.25rem con dimensione root modificata</p>
+        <p class="predefinita">Questo paragrafo usa 1.25rem con dimensione root predefinita</p>
+    </section>
+</body>
+
+</html>

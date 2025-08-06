@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larghezza minima e massima</title>
+    <style>
+        .testo-box {
+            width: 100%;
+        }
+
+        .testo-box p {
+            width: 80%;
+            min-width: 300px;
+            max-width: 600px;
+            border: 1px solid black;
+        }
+
+        .testo-box img {
+            width: 100%;
+            min-width: 200px;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="testo-box">
+        <p>Questo paragrafo ha una larghezza minima e massima per garantire la leggibilità del testo.</p>
+        <img src="media/dragon.jpg" alt="Immagine con larghezza limitata">
+    </div>
+</body>
+
+</html>
