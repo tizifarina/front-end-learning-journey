@@ -6,31 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Altezza minima e massima</title>
     <style>
-        p {
+        div.contenitore-altezza p {
             min-height: 150px;
             max-height: 300px;
             border: 1px solid black
         }
 
-        .box-testo {}
+        div.box-testo {
+            max-height: 200px;
+            min-height: 100px;
+            overflow: auto;
+            border: 2px grey;
+        }
     </style>
 </head>
 
 <body>
-    <div class="contenitore-altezza"></div>
-    <p>Questo paragrafo dimostra l’uso di altezza minima e massima. Prova ad aggiungere o rimuovere righe di testo per
-        vedere cosa succede.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus sunt similique eveniet quia maxime
-        ad nostrum eos molestias cum, corrupti repellat nemo? Provident, magnam aut. Qui cum ea nihil?</p>
-    <div class="box-testo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid saepe facere, minima
-        asperiores repellendus voluptatibus sint rem, eligendi accusamus possimus beatae corporis consequatur
-        voluptatum. Magni asperiores voluptatum earum ipsum officia.Lorem ipsum dolor, sit amet consectetur adipisicing
-        elit. Aliquid saepe facere, minima
-        asperiores repellendus voluptatibus sint rem, eligendi accusamus possimus beatae corporis consequatur
-        voluptatum. Magni asperiores voluptatum earum ipsum officia.Lorem ipsum dolor, sit amet consectetur adipisicing
-        elit. Aliquid saepe facere, minima
-        asperiores repellendus voluptatibus sint rem, eligendi accusamus possimus beatae corporis consequatur
-        voluptatum. Magni asperiores voluptatum earum ipsum officia</div>
+    <div class="contenitore-altezza">
+        <p>Questo paragrafo dimostra l’uso di altezza minima e massima. Prova ad aggiungere o rimuovere righe di testo
+            per
+            vedere cosa succede.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus sunt similique eveniet quia
+            maxime
+            ad nostrum eos molestias cum, corrupti repellat nemo? Provident, magnam aut. Qui cum ea nihil?</p>
+    </div>
+    <div class="box-testo">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid saepe facere, minima
+            asperiores repellendus voluptatibus sint rem, eligendi accusamus possimus beatae corporis consequatur
+            voluptatum. Magni asperiores voluptatum earum ipsum officia.Lorem ipsum dolor, sit amet consectetur
+            adipisicing
+            elit. Aliquid saepe facere, minima
+            asperiores repellendus voluptatibus sint rem, eligendi accusamus possimus beatae corporis consequatur
+            voluptatum. Magni asperiores voluptatum earum ipsum officia.Lorem ipsum dolor, sit amet consectetur
+            adipisicing
+            elit. Aliquid saepe facere, minima
+            asperiores repellendus voluptatibus sint rem, eligendi accusamus possimus beatae corporis consequatur
+            voluptatum. Magni asperiores voluptatum earum ipsum officia
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet ligula in lorem tincidunt
+            commodo. <br>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; <br>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. <br>
+            Curabitur in leo in elit scelerisque tempor. <br>
+            Integer nec orci quis arcu iaculis tincidunt. <br>
+            Nulla facilisi. <br>
+            Sed feugiat turpis in ipsum convallis, at dictum leo porta. <br>
+            Mauris vehicula, lorem ac convallis feugiat, augue justo sollicitudin mi, sed suscipit odio turpis non eros.
+            <br>
+            Curabitur ut tincidunt ex. <br>
+            Morbi euismod, arcu in tincidunt luctus, nibh libero tristique arcu, a euismod sem ante ut mi. <br></p>
+    </div>
 </body>
 
 </html>

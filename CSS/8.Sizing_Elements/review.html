@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misure relative complete</title>
+    <style>
+        section {
+            width: 90%;
+            min-height: 400px;
+            padding: 5%;
+            border: gray 1px solid;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        section.contenitore-generale h1 {
+            font-size: 2rem;
+        }
+
+        section.contenitore-generale p {
+            font-size: 1em;
+            padding-top: 2%;
+            margin-bottom: 3%;
+        }
+
+        section.contenitore-generale {
+            height: 500px;
+        }
+
+        div.box-figlio {
+            height: 50%;
+            width: 60%;
+            min-height: 200px;
+            max-height: 300px;
+            min-width: 250px;
+            max-width: 500px;
+        }
+
+        section.media-section video {
+            max-height: 300px;
+            width: auto;
+            display: block;
+        }
+
+        section.media-section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section.media-section {
+            width: 80%;
+            height: 400px;
+            overflow: hidden;
+            background-image: url("media/dragon.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contenitore-generale">
+        <h1>Benvenuto!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, hic! Sapiente ipsa repellat earum.
+            Est omnis asperiores dolorum, doloribus corporis laboriosam fuga blanditiis, itaque odit dignissimos, vero
+            pariatur commodi ipsum.</p>
+
+        <div class="box-figlio">
+            <p>Qua c'e' il box figlio</p>
+        </div>
+    </section>
+
+    <section class="media-section">
+        <img src="media/dragon.jpg" alt="Immagine esempio">
+        <video src="media/video.mp4" controls></video>
+    </section>
+</body>
+
+</html>

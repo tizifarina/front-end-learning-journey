@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scala immagine in larghezza</title>
+    <style>
+        div.contenitore {
+            width: 50%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        div.contenitore img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        div.contenitore-verticale {
+            height: 300px;
+            width: 400px;
+            overflow: hidden;
+        }
+
+        div.contenitore-verticale img {
+            max-height: 100%;
+            width: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenitore">
+        <img src="media/dragon.jpg" alt="Foto di esempio">
+    </div>
+
+    <div class="contenitore-verticale">
+        <img src="media/storm.jpg" alt="Immagine verticale">
+    </div>
+</body>
+
+</html>
