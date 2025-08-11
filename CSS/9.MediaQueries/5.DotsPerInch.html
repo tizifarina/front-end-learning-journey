@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immagini in base alla risoluzione</title>
+    <style>
+        .immagine-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (min-resolution: 300dpi) {
+            .immagine-container {
+                background-image: url(/CSS/8.Sizing_Elements/media/storm.jpg);
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="immagine-container">
+        <img src="/CSS/8.Sizing_Elements/media/dragon.jpg" alt="Immagine standard">
+        <p class="fallback-message">Immagine ad alta risoluzione caricata</p>
+    </div>
+</body>
+
+</html>
+
+<!--esercizio non finito-->

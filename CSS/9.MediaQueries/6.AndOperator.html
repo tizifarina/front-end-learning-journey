@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query con AND</title>
+    <style>
+        .avviso-dispositivo {
+            height: 100px;
+            width: 100%;
+            background-color: #eeeeee;
+            font-size: 16px;
+        }
+
+        @media(max-width: 480px) and (min-resolution: 300dpi) {
+            .avviso-dispositivo {
+                background-color: green;
+                font-size: 20px;
+                color: white;
+            }
+        }
+
+        .contenuto-speciale {
+            display: none;
+        }
+
+        @media(min-width: 375px) and (max-width: 600px) and (min-resolution: 300dpi) {
+            .contenuto-speciale {
+                display: block;
+                font-size: 18px;
+                background-color: #ffcc99;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="avviso-dispositivo">Stai usando uno schermo piccolo e ad alta risoluzione</div>
+    <section class="contenuto-speciale">
+        <p>Questa sezione appare solo su dispositivi specifici</p>
+    </section>
+</body>
+
+</html>

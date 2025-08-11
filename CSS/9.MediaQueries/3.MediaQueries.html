@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query – Font Size</title>
+    <style>
+        /* Font base */
+        .testo p {
+            font-size: 18px;
+        }
+
+        /* Font ridotto per schermi <= 480px */
+        @media(max-width: 480px) {
+            .testo p {
+                font-size: 12px;
+            }
+        }
+
+        /* Layout griglia desktop */
+        .griglia {
+            display: flex;
+            gap: 10px;
+        }
+
+        .griglia .colonna {
+            width: 30%;
+            height: 100px;
+        }
+
+        /* Layout mobile per schermi <= 600px */
+        @media(max-width: 600px) {
+            .griglia {
+                display: block;
+                width: 100%;
+            }
+
+            .griglia .colonna {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="testo">
+        <p>Questo testo cambia dimensione su schermi piccoli.</p>
+    </div>
+
+    <section class="griglia">
+        <div class="colonna" style="background-color: aqua;">Colonna1</div>
+        <div class="colonna" style="background-color: beige;">Colonna2</div>
+        <div class="colonna" style="background-color: blueviolet;">Colonna3</div>
+    </section>
+</body>
+
+</html>

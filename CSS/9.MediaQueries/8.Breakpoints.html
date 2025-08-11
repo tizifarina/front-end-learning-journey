@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoint per tablet</title>
+    <style>
+        /* Base per tablet-layout */
+        .tablet-layout {
+            width: 100%;
+            height: 150px;
+            background-color: #e0e0e0;
+            font-size: 16px;
+        }
+
+        /* Media query tablet in landscape tra 768 e 1024 */
+        @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+            .tablet-layout {
+                background-color: green;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+
+        /* Base contenuto-flessibile */
+        .contenuto-flessibile {
+            display: flex;
+        }
+
+        .contenuto-flessibile .blocco {
+            width: 30%;
+            height: 100px;
+        }
+
+        /* Breakpoint per disporre i blocchi in colonna se lo schermo è piccolo */
+        @media only screen and (max-width: 700px) {
+            .contenuto-flessibile {
+                display: block;
+            }
+
+            .contenuto-flessibile .blocco {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="tablet-layout">
+        <p>Layout ottimizzato per tablet in orizzontale</p>
+    </section>
+
+    <section class="contenuto-flessibile">
+        <div class="blocco" style="background-color: aquamarine;">Blocco 1</div>
+        <div class="blocco" style=" background-color: rebeccapurple;">Blocco 2</div>
+        <div class="blocco" style=" background-color: blueviolet">Blocco 3</div>
+    </section>
+</body>
+
+</html>

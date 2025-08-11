@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisione Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Layout di base */
+        .layout-responsive {
+            display: flex;
+        }
+
+        .layout-responsive .box {
+            width: 30%;
+            height: 150px;
+            background-color: blue;
+            font-size: 18px;
+        }
+
+        /* Max-width: 1024px + landscape */
+        @media only screen and (max-width:1024px) and (orientation: landscape) {
+            .layout-responsive .box {
+                width: 45%;
+            }
+        }
+
+        /* Max-width: 768px */
+        @media(max-width: 768px) {
+            .layout-responsive {
+                display: block;
+            }
+
+            .layout-responsive .box {
+                width: 100%;
+            }
+        }
+
+        /* Max-width: 480px + alta risoluzione */
+        @media only screen and (max-width: 480px) and (min-resolution: 300dpi) {
+            .layout-responsive .box {
+                font-size: 14px;
+            }
+        }
+
+        .info-utente {
+            font-size: 16px;
+            color: black;
+            background-color: #f0f0f0;
+        }
+
+        @media only screen and (max-width: 768px) and (min-resolution: 300dpi) {
+            .info-utente {
+                color: white;
+                background-color: orange;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) and (orientation: landscape) {
+            .info-utente {
+                font-size: 20px;
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="layout-responsive">
+        <div class="box" style="background-color: aliceblue;">BoxA</div>
+        <div class="box" style="background-color: aquamarine;">BoxB</div>
+        <div class="box" style="background-color: blueviolet;">BoxC</div>
+    </section>
+
+    <section class="info-utente">
+        <p>“Questa sezione adatta il suo stile in base a molteplici condizioni</p>
+    </section>
+</body>
+
+</html>

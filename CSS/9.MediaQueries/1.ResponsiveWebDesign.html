@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design reattivo base</title>
+    <style>
+        /* Layout base: schermi grandi */
+        .contenitore {
+            display: flex;
+            width: 100%;
+        }
+
+        .box1 {
+            width: 50%;
+            height: 200px;
+            background-color: aquamarine;
+        }
+
+        .box2 {
+            width: 50%;
+            height: 200px;
+            background-color: navajowhite;
+        }
+
+        /* Layout mobile: schermi <= 600px */
+        @media(max-width: 600px) {
+            .contenitore {
+                display: block;
+            }
+
+            .box1,
+            .box2 {
+                width: 100%;
+            }
+        }
+
+        .testo-reattivo p {
+            font-size: 18px;
+        }
+
+        @media(max-width: 600px) {
+            .testo-reattivo p {
+                font-size: 14px;
+            }
+        }
+
+        @media(min-width: 1000px) {
+            .testo-reattivo p {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenitore">
+        <div class="box1">Contenuto principale</div>
+        <div class="box2">Contenuto secondario</div>
+    </div>
+
+    <section class="testo-reattivo">
+        <p>Questo testo si adatta alla dimensione dello schermo per migliorare la leggibilità.</p>
+    </section>
+</body>
+
+</html>

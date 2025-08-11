@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query con lista separata da virgole</title>
+    <style>
+        .notifica-responsive {
+            width: 100%;
+            height: 100px;
+            background-color: #f2f2f2;
+            font-size: 16px;
+        }
+
+        @media only screen and (min-width: 480px),
+        (orientation: landscape) {
+            .notifica-responsive {
+                background-color: blue;
+                font-size: 20px;
+                color: white;
+            }
+        }
+
+        .griglia-layout .colonna {
+            display: block;
+            height: 100px;
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 768px),
+        (orientation: landscape) {
+            .griglia-layout .colonna {
+                display: inline-block;
+                width: 49%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="notifica-responsive">
+        <h1>Stai usando uno schermo largo oppure sei in modalità landscape.</h1>
+    </div>
+
+    <section class="griglia-layout">
+        <div class="colonna" style="background-color: aquamarine;">Colonna A</div>
+        <div class="colonna" style="background-color: brown;">Colonna B</div>
+    </section>
+</body>
+
+</html>
