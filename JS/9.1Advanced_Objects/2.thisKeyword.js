@@ -6,18 +6,17 @@ let robot = {
     status : 'online',
     reportStatus(){
         console.log('Model', this.model, 'is currently', this.status);
-    },
-
-    shutDown(){
-        this.status = 'offline';
     }
 }
 
 robot.reportStatus();
-robot.shutDown();
-robot.reportStatus();
 
 
 // 2: Modificare proprietà con `this` in un metodo
+robot.shutDown = function(){
+        this.status = 'offline';
+}
+robot.shutDown();
+robot.reportStatus();
 
 
